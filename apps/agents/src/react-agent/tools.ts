@@ -2,13 +2,13 @@
  * This file defines the tools available to the ReAct agent.
  * Tools are functions that the agent can use to interact with external systems or perform specific tasks.
  */
-import { TavilySearchResults } from "@langchain/community/tools/tavily_search";
+import { DuckDuckGoSearch } from "@langchain/community/tools/duckduckgo_search";
 
 /**
- * Tavily search tool configuration
- * This tool allows the agent to perform web searches using the Tavily API.
+ * DuckDuckGo search tool configuration
+ * This tool allows the agent to perform web searches using the DuckDuckGo API.
  */
-const searchTavily = new TavilySearchResults({
+const searchDuckDuckGo = new DuckDuckGoSearch({
   maxResults: 3,
 });
 
@@ -20,4 +20,4 @@ const searchTavily = new TavilySearchResults({
  * and add them to this array.
  * See https://js.langchain.com/docs/how_to/custom_tools/#tool-function for more information.
  */
-export const TOOLS = [searchTavily];
+export const TOOLS = [searchDuckDuckGo];
