@@ -1,7 +1,8 @@
 # My LangGraph Agents
 
-This project was created using `npx create-agent-chat-app`
-Reference repo: https://github.com/langchain-ai/agent-chat-ui
+This project was created using `npx create-agent-chat-app`.
+
+- Original repo: https://github.com/langchain-ai/agent-chat-ui
 
 ## Quick Start
 
